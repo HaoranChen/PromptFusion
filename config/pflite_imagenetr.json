@@ -1,0 +1,28 @@
+{
+    "model_type": "PF_Lite",
+    
+    "dataset": "ImagenetR",
+    "file_root": "/home/ubuntu/Projects/PromptFusion",
+    "data_root": "/home/ubuntu/Datasets/imagenet-r",
+    "backbone": "ViT-B-16",
+    "herding_method": "barycenter",
+    "device": "cuda",
+    "ngpus": 2,
+
+    "batch_size": 32,
+    "memory_size": 5000,
+    "step": 10,
+    "epoch": 5,
+    "learning_rate": 0.003,
+    "weight_decay": 0.01,
+    "M": 30,
+    "vpt_prompt_length": 20,
+    "clip_image_prompt_length": 40,
+
+    "gumbel_temp": 3.0,
+    "gamma": 0.4,
+    "Lambda": 0.7,
+    "Delta": 0.1, 
+    "activation": "tanh"
+}
+

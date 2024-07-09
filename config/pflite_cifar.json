@@ -1,0 +1,28 @@
+{
+    "model_type": "PF_Lite",
+    
+    "dataset": "Cifar",
+    "file_root": "/home/ubuntu/Projects/PromptFusion",
+    "data_root": "/home/ubuntu/Datasets/cifar",
+    "backbone": "ViT-B-16",
+    "herding_method": "barycenter",
+    "device": "cuda",
+    "ngpus": 2,
+
+    "batch_size": 32,
+    "memory_size": 5000,
+    "step": 10,
+    "epoch": 3,
+    "learning_rate": 0.002,
+    "weight_decay": 0.001,
+    "M": 30,
+    "vpt_prompt_length": 30,
+    "clip_image_prompt_length": 30,
+
+    "gumbel_temp": 3.0,
+    "gamma": 0.4,
+    "Lambda": 0.3,
+    "Delta": 0.1, 
+    "activation": "tanh"
+}
+
