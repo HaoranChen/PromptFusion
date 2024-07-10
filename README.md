@@ -6,6 +6,7 @@
 **Authors**: Haoran Chen, [Zuxuan Wu](https://zxwu.azurewebsites.net/), Xintong Han, Menglin Jia, Yu-Gang Jiang
 
 ## :mag: PromptFusion
+To address the stability-plasticity dilemma of continual learning, we propose a prompt-tuning-based method termed PromptFusion to enable the decoupling of stability and plasticity. Specifically, PromptFusion consists of a carefully designed Stabilizer module that deals with catastrophic forgetting and a Booster module to learn new knowledge concurrently. Furthermore, to address the computational overhead brought by the additional architecture, we propose PromptFusion-Lite which improves PromptFusion by dynamically determining whether to activate both modules for each input image.
 <p align="center">
 <img src="overview/framework.png" width="720px"/>  
 <be>
